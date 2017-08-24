@@ -1,0 +1,95 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>CSS Grid Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site">
+        <header class="masthead box">
+            <img src="images/sample-logo.png" />
+            <h2>Awesome CSS layout ever!</h2>
+        </header>
+        <h1 class="page-title box">CSS Grid Layout - A Quick Reference
+	</h1>
+        <main class="main-content box">
+            <h2>A 2-dimensional layout system handles both rows and columns</h2>
+            <ul>
+                <li>Define a grid based on your design</li>
+                <li>Place items within the grid</li>
+            </ul>
+            <h2>How to create a simple grid layout?</h2>
+            <p><strong>Collect information</strong></p>
+            <ul>
+                <li>Identify different element blocks in the design</li>
+                <li>Decide the number of row lines and column lines required to create the design</li>
+                <li>Get a rough idea about the column width and row height required</li>
+            </ul>
+            <p><strong>Parent / wrapper (grid-container) element and its styling</strong></p>
+            <ul>
+                <li>Add a parent / wrapper for the grid</li>
+                <li>Give display: grid to it</li>
+                <li>Add css properties for creating grid columns and grid rows using "grid-template-columns" and "grid-template-rows". Take length values (em, px, %, fr) denoting the distance between each line to the grid container.</li>
+            </ul>
+            <p><strong>child elements (grid-items) and its styling</strong></p>
+            <ul>
+                <li>Place the elements (gird items or child elements) in the respective grid cells using the css properties: "grid-column" and "grid-row". This uses column start line and column end line for that particular block</li>
+                <li>Add other blocks/elements based on its start and end column / row lines</li>
+            </ul>
+            <p><strong>Example</strong></p>
+            <img class="fullwidth-img" src="images/grid-col-row.png" />
+            <p>
+                .site {
+                <br /> display: grid;
+                <br /> grid-template-columns: 2fr 1fr 1fr;
+                <br /> grid-template-rows: auto 300px auto;
+                <br /> }
+                <br /> .masthead {
+                <br /> grid-row: 2/3;
+                <br /> grid-column: 2/4;
+                <br /> }
+                <br />
+            </p>
+            <p><strong>To make the block responsive -</strong> change the grid column and grid row of that block
+                <br /><i>(What lines to target seems tricky)</i></p>
+            <p>.masthead {
+                <br /> grid-row: 1/4;
+                <br /> grid-column: 2/3;
+                <br /> }
+                <br />
+            </p>
+        </main>
+        <aside class="sidebar box">
+            <h2>Grid terminology</h2>
+            <ul>
+                <li>Grid container</li>
+                <li>Grid item</li>
+                <li>Grid line</li>
+                <li>Grid cell</li>
+                <li>Grid track</li>
+                <li>Grid area</li>
+                <li>Grid gap</li>
+            </ul>
+            <p><img src="images/grid-term.png" class="fullwidth-img" /></p><br />
+            <h2>Fractional Unit 'fr'</h2>
+            <p>Fr is a fractional unit and 1fr is for 1 part of the available space. The following are a few examples of the fr unit at work. The grid items in these examples are placed onto the grid with grid areas.</p>
+        </aside>
+        <footer class="footer box">
+            <h2>References</h2><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">A complete guide to grid</a>
+            <br />
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" target="_blank">CSS grid Layout</a>
+            <h2>Quick Tip</h2>
+            <p><strong><i>To enable grid in chrome</i></strong></p>
+            <p><strong>Load url:</strong> “chrome://flags”
+                <br />
+                <strong>Scroll down to feature:</strong> Enable the option “Enable experimental web platform features”
+                <br />
+                <strong>Click:</strong> “Relaunch Now” button</p>
+        </footer>
+    </div>
+    <!-- .site -->
+</body>
+
+</html>
