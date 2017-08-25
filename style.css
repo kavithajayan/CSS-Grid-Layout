@@ -1,23 +1,18 @@
 html {
     box-sizing: border-box;
 }
-/*#805841,#DCF7F3,#FFFCDD,#FFD8D8,#F5A2A2
-
-#805841- brown
-#DCF7F3 - light blue/green
-#FFFCDD - light yellow
-#FFD8D8 - light coral
-#F5A2A2 - darker coral*/
 
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 body {
     font-size: 18px;
     font-family: verdana;
 }
+
 .site {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
@@ -59,18 +54,22 @@ body {
     grid-row: 3/4;
     background-color: #FFD8D8;
 }
+
 .box {
     padding: 20px;
     line-height: 27px;
 }
+
 main img {
     text-align: center;
 }
+
 .fullwidth-img {
     width: 100%;
 }
+
 @media only screen and (max-width: 990px) {
-    
+
     .sidebar {
         grid-column: 2/4;
         grid-row: 3/4;
