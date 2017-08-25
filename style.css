@@ -68,18 +68,6 @@ main img {
     width: 100%;
 }
 
-@media only screen and (max-width: 990px) {
-
-    .sidebar {
-        grid-column: 2/4;
-        grid-row: 3/4;
-    }
-    .footer {
-        grid-column: 1/4;
-        grid-row: 5/6;
-    }
-}
-
 @media only screen and (max-width: 767px) {
     .masthead {
         grid-column: 1/4;
@@ -96,6 +84,18 @@ main img {
     .sidebar {
         grid-column: 1/4;
         grid-row: 4/5;
+    }
+    .footer {
+        grid-column: 1/4;
+        grid-row: 5/6;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+
+    .sidebar {
+        grid-column: 2/4;
+        grid-row: 3/4;
     }
     .footer {
         grid-column: 1/4;
