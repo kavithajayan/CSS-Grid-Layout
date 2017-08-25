@@ -57,7 +57,7 @@ body {
 .footer {
     grid-column: 3/4;
     grid-row: 3/4;
-    background-color: crimson;
+    background-color: #FFD8D8;
 }
 .box {
     padding: 20px;
@@ -72,8 +72,8 @@ main img {
 @media only screen and (max-width: 990px) {
     
     .sidebar {
-		grid-column: 2/4;
-		grid-row: 3/4;
+        grid-column: 2/4;
+        grid-row: 3/4;
     }
     .footer {
         grid-column: 1/4;
